@@ -1,13 +1,23 @@
-import React from "react";
-import Header from "./components/Header";
-import Conteiner from "./components/Conteiner";
+import React from 'react';
+import Navbar from './components/exampleRouting/NavbarExample';
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import SurvivalGuide from './components/SurvivalGuide/SurvivalGuide';
+import FirstAid from './components/exampleRouting/FirstAid';
+import Geolocation from './components/exampleRouting/Geolocation';
+import Home from './components/Home/Home';
+
 
 function App() {
   return (
-    <>
-      <Header />
-      <Conteiner />
-    </>
+    <BrowserRouter>
+      <Navbar />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/survival-guide" element={<SurvivalGuide />} />
+        <Route path="/first-aid" element={<FirstAid />} />
+        <Route path="/geolocation" element={<Geolocation />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 
