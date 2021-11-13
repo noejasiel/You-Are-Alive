@@ -1,15 +1,24 @@
 import React from 'react';
-import Brujula from './components/Brujula';
-import MapView from './components/MapView';
-import {Routes, Route, BrowserRouter} from 'react-router-dom';
+import Navbar from './components/exampleRouting/NavbarExample';
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import SurvivalGuide from './components/SurvivalGuide/SurvivalGuide';
+import FirstAid from './components/exampleRouting/FirstAid';
+import Geolocation from './components/exampleRouting/Geolocation';
+import Home from './components/Home/Home';
 
-const App = ()=>(
-	<BrowserRouter>
-		<Routes>
-			<Route path="/" element={<MapView/>}/>
-			<Route path="/hom" element={<Brujula/>}/>
-		</Routes>
-	</BrowserRouter>
-)
+
+function App() {
+  return (
+    <BrowserRouter>
+      <Navbar />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/survival-guide" element={<SurvivalGuide />} />
+        <Route path="/first-aid" element={<FirstAid />} />
+        <Route path="/geolocation" element={<Geolocation />} />
+      </Routes>
+    </BrowserRouter>
+  );
+}
 
 export default App;
