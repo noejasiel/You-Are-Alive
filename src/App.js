@@ -1,13 +1,15 @@
 import React from 'react';
-import Nav from './components/Nav'
+import Brujula from './components/Brujula';
+import MapView from './components/MapView';
+import {Routes, Route, BrowserRouter} from 'react-router-dom';
 
-function App() {
-  return (
-    <div className="bg-red-500 h-screen">
-      <p className="bg-blue-800 w">Funciona</p>
-      <Nav/>
-    </div>
-  );
-}
+const App = ()=>(
+	<BrowserRouter>
+		<Routes>
+			<Route path="/" element={<MapView/>}/>
+			<Route path="/hom" element={<Brujula/>}/>
+		</Routes>
+	</BrowserRouter>
+)
 
 export default App;
