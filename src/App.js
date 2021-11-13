@@ -1,12 +1,13 @@
-import React from 'react';
-import Nav from './components/Nav'
+import React from "react";
+import Header from "./components/Header";
+import Conteiner from "./components/Conteiner";
 
 function App() {
   return (
-    <div className="bg-red-500 h-screen">
-      <p className="bg-blue-800 w">Funciona</p>
-      <Nav/>
-    </div>
+    <>
+      <Header />
+      <Conteiner />
+    </>
   );
 }
 
