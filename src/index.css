@@ -6,7 +6,7 @@
 #map { height: 180px; }
 
 .leaflet-container {
-    width: 50vw;
-    height: 50vh;
+    width: 90vw;
+    height: 60vh;
     margin: auto;
 }

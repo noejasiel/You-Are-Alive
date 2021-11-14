@@ -1,4 +1,4 @@
-import Icon from '../assets/Marker_Icon.svg';
+import Icon from '../../assets/Marker_Icon.svg';
 import L from 'leaflet'
 
 export const IconLocation = L.icon({
