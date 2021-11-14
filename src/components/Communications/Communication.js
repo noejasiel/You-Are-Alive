@@ -1,23 +1,12 @@
-import React, {useState} from 'react';
-import {useParams} from 'react-router-dom';
+import React from 'react';
 
 const Communication = ()=> {
 
-    const [inputs, setInputs] = useState({
-        text: '',
-        morse: ''
-    })
-
-    const handleChange = e =>{
-        setInputs({...inputs, [e.target.name]: e.target.value});
-        console.log(inputs);
-    }
-
     return(
-        <>
-            <input value={inputs.text} name="text" onChange={handleChange} type="text" className="border-8 border-purple-900 rounded-md m-6 p-6"/>
-            <input value={inputs.morse} name="morse" onChange={handleChange} type="text" className="border-8 border-purple-900 rounded-md m-6 p-6"/>
-        </>
+        <div>
+            <h2 className="text-gray-800 text-center my-10 font-bold text-6xl">TRADUCTOR MORSE</h2>
+            <iframe className="mt-20" title="traductor morse" id="embed-iframe" src="https://embed.morsedecoder.com/es/" width="100%" height="400px" frameborder="0"/>
+        </div>
     )
 }
 

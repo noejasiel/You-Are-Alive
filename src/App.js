@@ -12,6 +12,9 @@ import SurvivalBasic from "./components/SurvivalGuide/SurvivalBasic";
 
 import GeolocationPart from "./components/exampleRouting/GeolocationPart";
 import Communication from "./components/Communications/Communication";
+import Wellness from "./components/MentalWellness/Wellness";
+import WellnessPart from "./components/MentalWellness/WellnessPart";
+
 
 
 function App() {
@@ -28,6 +31,8 @@ function App() {
         <Route path="/geolocation" element={<Geolocation />} />
         <Route path="/geolocation/:part" element={<GeolocationPart />} />
         <Route path="/communications" element={<Communication />} />
+        <Route path="/wellness" element={<Wellness />} />
+        <Route path="/wellness/:part" element={<WellnessPart />} />
       </Routes>
     </BrowserRouter>
   );

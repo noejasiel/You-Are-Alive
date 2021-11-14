@@ -37,15 +37,21 @@ const Navbar = () => {
             :<img width="25px" className="cursor-pointer" onClick={handleToggle} src={menu} alt="hamburguer menu"/>
             }
           </div>
-          <ul className={toggle ? "absolute top-20 right-44 bg-purple-500 p-5 rounded-b" : "hidden"}>
-            <li>
-              <NavLink to="/survival-guide">Supervivencia</NavLink>
+          <ul className={toggle ? "absolute top-20 right-0 bg-purple-500 rounded-b z-10" : "hidden"}>
+            <li className="hover:bg-indigo-900 cursor-pointer p-6 active:bg-indigo-900 z-index">
+              <NavLink className="p-2 text-white font-bold " to="/survival-guide">Supervivencia</NavLink>
             </li>
-            <li>
-              <NavLink to="/first-aid">Primeros Auxilios</NavLink>
+            <li className="hover:bg-indigo-900 cursor-pointer p-6 active:bg-indigo-900 z-index">
+              <NavLink className="p-2 text-white font-bold " to="/first-aid">Primeros Auxilios</NavLink>
             </li>
-            <li>
-              <NavLink to="/geolocation">Mapas</NavLink>
+            <li className="hover:bg-indigo-900 cursor-pointer p-6 active:bg-indigo-900 z-index">
+              <NavLink className="p-2 text-white font-bold " to="/geolocation">Mapas</NavLink>
+            </li>
+            <li className="hover:bg-indigo-900 cursor-pointer p-6 active:bg-indigo-900 z-index">
+              <NavLink className="p-2 text-white font-bold " to="/communications">Comunicacion</NavLink>
+            </li>
+            <li className="hover:bg-indigo-900 cursor-pointer p-6 active:bg-indigo-900 z-index">
+              <NavLink className="p-2 text-white font-bold " to="/wellness">Salud mental</NavLink>
             </li>
           </ul>
         </div>

@@ -1,14 +1,9 @@
 import React from "react";
 import { useParams } from "react-router";
-import valoracion from "../../assets/firstAids/valoracion.png";
-import Heridas from "../../assets/firstAids/herida.jpg";
-import Hemorragias from "../../assets/firstAids/hemorragia.png";
-import Cuerpos from "../../assets/firstAids/cosasojos.jpg";
 import Caso from "./Caso";
 
 const FirstAidBasic = () => {
   const params = useParams();
-
   const casos = [
     {
       title: "Valoracion del Paciente",
@@ -40,7 +35,11 @@ const FirstAidBasic = () => {
   } else if (params.numero === "3") {
     return <Caso titulo="plantas" />;
   }
-  return <section></section>;
+
+  return (
+    <section>
+    </section>
+  );
 };
 
 export default FirstAidBasic;

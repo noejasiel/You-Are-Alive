@@ -27,8 +27,8 @@ const FisrtAid = () => {
           key={i}
           className="block my-4 w-3/4 flex justify-center content-center h-12"
         >
-          <Card className="survival-card">
-            <Link to={l.Link} className="m-auto">
+          <Card className="survival-card cursor-pointer">
+            <Link to={l.Link} className="m-auto text-white font-bold">
               {l.title}
             </Link>
           </Card>
