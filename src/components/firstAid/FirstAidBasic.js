@@ -30,7 +30,12 @@ const FirstAidBasic = () => {
     return casos.map((c, i) => (
       <Caso numero={c.numero} titulo={c.title} key={i} />
     ));
+  } else if (params.numero === "2") {
+    return <Caso titulo="Medicinas" />;
+  } else if (params.numero === "3") {
+    return <Caso titulo="plantas" />;
   }
+
   return (
     <section>
     </section>
