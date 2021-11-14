@@ -20,7 +20,14 @@ const Navbar = () => {
           </div>
           <div></div>
           <div className=" flex flex-wrap content-center">
-            <img width="25px" className="cursor-pointer" onClick={handleToggle} src={menu} alt="hamburguer menu"></img>
+
+            <img
+              width="25px"
+              onClick={handleToggle}
+              src={menu}
+              alt="hamburguer menu"
+            ></img>
+
           </div>
           <ul className={toggle ? "" : "hidden"}>
             <li>
