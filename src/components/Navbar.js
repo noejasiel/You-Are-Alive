@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import logo from "../assets/logotipo.svg";
 import menu from "../assets/menu.svg";
 
@@ -8,14 +8,15 @@ const Navbar = () => {
   const handleToggle = () => {
     setToggle(!toggle);
   };
+
   return (
-    <div className=" w-100 h-20 bg-red-600">
+    <div className=" w-100 h-20 bg-blue-700">
       <nav className="w-100 h-20">
         <div className="w-100 h-20 flex flex-wrap justify-around  content-center">
           <div class="relative bottom-100 left-0">
-            <Link to="/">
-              <img width="65px" className="" src={logo}></img>
-            </Link>
+            <NavLink to="/">
+              <img width="65px" className="" src={logo} alt="Logotipo" />
+            </NavLink>
           </div>
           <div></div>
           <div className=" flex flex-wrap content-center">
@@ -28,13 +29,13 @@ const Navbar = () => {
           </div>
           <ul className={toggle ? "" : "hidden"}>
             <li>
-              <Link to="/survival-guide">Supervivencia</Link>
+              <NavLink to="/survival-guide">Supervivencia</NavLink>
             </li>
             <li>
-              <Link to="/first-aid">Primeros Auxilios</Link>
+              <NavLink to="/first-aid">Primeros Auxilios</NavLink>
             </li>
             <li>
-              <Link to="/geolocation">Mapas</Link>
+              <NavLink to="/geolocation">Mapas</NavLink>
             </li>
           </ul>
         </div>

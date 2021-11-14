@@ -1,20 +1,39 @@
 import React from "react";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
-import BasicAids from "./BasicAids";
+import { Link } from "react-router-dom";
+import Card from "../GeneralUI/Card/Card";
 
 const FisrtAid = () => {
+  const links = [
+    {
+      Link: "/first-aid/1",
+      icon: "icon-url",
+      title: "Primeros auxilios basicos",
+    },
+    {
+      Link: "/first-aid/2",
+      icon: "icon-url",
+      title: "medicamentos y cuando usarlos",
+    },
+    {
+      Link: "/first-aid/3",
+      icon: "icon-url",
+      title: "Plantas medicinales",
+    },
+  ];
   return (
-    <div class="flex flex-col w-full grid justify-items-center mt-14 ">
-      <div className="block my-4 w-3/4 flex justify-center content-center h-20 bg-green-500  rounded-lg">
-        <h2 className="m-auto">Primeros auxilios basicos</h2>
-      </div>
-      <div className="block my-4 w-3/4 flex justify-center content-center h-20 bg-green-500 rounded-lg">
-        <h2 className="m-auto"> Medicamentos escenciales y su uso </h2>
-      </div>
-      <div className="block my-4 w-3/4 flex justify-center content-center h-20 bg-green-500 rounded-lg">
-        <h2 className="m-auto">Guia de Plantas</h2>
-      </div>
-      <BasicAids />
+    <div className="flex flex-col w-full grid justify-items-center mt-14 ">
+      {links.map((l, i) => (
+        <div
+          key={i}
+          className="block my-4 w-3/4 flex justify-center content-center h-12"
+        >
+          <Card className="survival-card">
+            <Link to={l.Link} className="m-auto">
+              {l.title}
+            </Link>
+          </Card>
+        </div>
+      ))}
     </div>
   );
 };
