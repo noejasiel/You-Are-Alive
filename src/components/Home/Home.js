@@ -11,27 +11,27 @@ const Home = () => {
 
   const seccions = [
     {
-      title:'Survival Tips',
+      title:'Tips de supervivencia',
       icon: Foco_Icon,
       link: '/survival-guide'
     },
     {
-      title:'First Aid',
+      title:'Primeros auxilios',
       icon: Aid_Icon,
       link: '/first-aid'
     },
     {
-      title:'Geolocation',
+      title:'Geolocalizacion',
       icon: Geolocation_Icon,
       link: '/geolocation'
     },
     {
-      title:'Mental Wellness',
+      title:'Salud mental',
       icon: Mental_Icon,
-      link: ''
+      link: '/wellness'
     },
     {
-      title:'Communications',
+      title:'Comunicaciones',
       icon: Communication_Icon,
       link: '/communications'
     },
