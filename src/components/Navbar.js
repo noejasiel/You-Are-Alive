@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import {NavLink } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import logo from "../assets/logotipo.svg";
 import menu from "../assets/menu.svg";
 
@@ -15,19 +15,17 @@ const Navbar = () => {
         <div className="w-100 h-20 flex flex-wrap justify-around  content-center">
           <div class="relative bottom-100 left-0">
             <NavLink to="/">
-              <img width="65px" className="" src={logo} alt="Logotipo"/>
+              <img width="65px" className="" src={logo} alt="Logotipo" />
             </NavLink>
           </div>
           <div></div>
           <div className=" flex flex-wrap content-center">
-
             <img
               width="25px"
               onClick={handleToggle}
               src={menu}
               alt="hamburguer menu"
             ></img>
-
           </div>
           <ul className={toggle ? "" : "hidden"}>
             <li>
