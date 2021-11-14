@@ -27,7 +27,7 @@ const Navbar = () => {
         <div className="w-100 h-20 flex flex-wrap justify-around  content-center">
           <div className="relative bottom-100 left-0">
             <NavLink to="/">
-              <img width="65px" className="" src={logo} alt="Logotipo"/>
+              <img width="65px" className="" src={logo} alt="Logotipo" />
             </NavLink>
           </div>
           <div></div>
