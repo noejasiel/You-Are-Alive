@@ -7,6 +7,8 @@ import FirstAid from "./components/firstAid/FisrtAid";
 import Geolocation from "./components/exampleRouting/Geolocation";
 import Home from "./components/Home/Home";
 import FirstAidBasic from "./components/firstAid/FirstAidBasic";
+import GeolocationPart from "./components/exampleRouting/GeolocationPart";
+import Communication from "./components/Communications/Communication";
 
 function App() {
   return (
@@ -18,6 +20,8 @@ function App() {
         <Route path="/first-aid" element={<FirstAid />} />
         <Route path="/first-aid/:numero" element={<FirstAidBasic/>}/>
         <Route path="/geolocation" element={<Geolocation />} />
+        <Route path="/geolocation/:part" element={<GeolocationPart />} />
+        <Route path="/communications" element={<Communication />} />
       </Routes>
     </BrowserRouter>
   );
