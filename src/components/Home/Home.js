@@ -6,6 +6,7 @@ import Geolocation_Icon from '../../assets/Geolocation_Icon.svg';
 import Mental_Icon from '../../assets/Mental_Icon.svg';
 import Communication_Icon from '../../assets/Communication_Icon.svg';
 import {Link} from 'react-router-dom';
+import './Home.css';
 
 const Home = () => {
 
@@ -38,10 +39,10 @@ const Home = () => {
   ]
 
   return (
-    <div className="bg-gradient-to-l from-gray-800 to-black w-screen h-screen">
+    <div className="body h-screen bg-gradient-to-l w-screen box-content">
       <div className="flex justify-around pt-14">
         <img width="100px" className="" src={Logo} alt="Logotipo"/>
-        <div className="bg-gradient-to-l from-green-400 to-green-700 rounded-lg text-white font-bold p-9 sm:p-5">
+        <div className="bg-gradient-to-l from-green-400 to-green-700 rounded-lg text-white font-bol d p-9 sm:p-5">
           Welcome to you're alive, depending on 
           the situation and what you need choose 
           an option.
